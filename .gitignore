@@ -27,17 +27,33 @@ migrate_working_dir/
 **/doc/api/
 **/ios/Flutter/.last_build_id
 .dart_tool/
+.flutter-plugins
 .flutter-plugins-dependencies
 .pub-cache/
 .pub/
 /build/
-/coverage/
 
 # Symbolication related
 app.*.symbols
 
 # Obfuscation related
 app.*.map.json
+
+#Ignore Android, iOS, ect.
+android/* linguist-vendored
+ios/* linguist-vendored
+macos/* linguist-vendored
+web/* linguist-vendored
+windows/* linguist-vendored
+test/* linguist-vendored
+*.iml linguist-generated
+*.bat linguist-generated
+*.sh linguist-generated
+*.xml linguist-generated
+*.gradle linguist-generated
+*.lock linguist-generated
+*.yaml linguist-generated
+.idea/** linguist-generated
 
 # Android Studio will place build artifacts here
 /android/app/debug
