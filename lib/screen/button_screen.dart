@@ -3,6 +3,7 @@ import 'package:flutter_project1/screen/column/column_screen.dart';
 import 'package:flutter_project1/screen/column/column_practice_screen.dart';
 import 'package:flutter_project1/screen/container/container_practice_screen.dart';
 import 'package:flutter_project1/screen/container/container_screen.dart';
+import 'package:flutter_project1/screen/row/row_screen.dart';
 
 class ButtonScreen extends StatelessWidget {
   const ButtonScreen({super.key});
@@ -68,6 +69,20 @@ class ButtonScreen extends StatelessWidget {
                 );
               },
               child: Text("Column 실습"),
+            ),
+            SizedBox(height: 10),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return RowScreen();
+                    },
+                  ),
+                );
+              },
+              child: Text("Row"),
             ),
           ],
         ),
