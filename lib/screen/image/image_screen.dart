@@ -35,16 +35,6 @@ class ImageScreen extends StatelessWidget {
                 height: 300,
                 child: Image.network(
                     'https://sailing-it-images.s3.ap-northeast-2.amazonaws.com/company/company_device.png',
-                  fit: BoxFit.fitHeight,
-                ),
-              ),
-              SizedBox(height: 30),
-              Container(
-                color: Colors.grey,
-                width: 300,
-                height: 300,
-                child: Image.network(
-                    'https://sailing-it-images.s3.ap-northeast-2.amazonaws.com/company/company_device.png',
                   fit: BoxFit.fitWidth,
                 ),
               ),
@@ -60,6 +50,7 @@ class ImageScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 30),
+              SizedBox(width: 150, height: 150, child: Image.asset('assets/lecture_flutter_image'),),
               SizedBox(height: 30),
             ],
           ),
