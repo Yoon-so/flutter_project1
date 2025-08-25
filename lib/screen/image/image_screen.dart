@@ -50,7 +50,7 @@ class ImageScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 30),
-              SizedBox(width: 150, height: 150, child: Image.asset('assets/lecture_flutter_image'),),
+              SizedBox(width: 150, height: 150, child: Image.asset('assets/lecture_flutter_image.png'),),
               SizedBox(height: 30),
             ],
           ),
