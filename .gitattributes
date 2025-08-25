@@ -1,0 +1,18 @@
+# Exclude system and generated files from GitHub Linguist statistics
+
+#Folders with platform files
+android/** linguist-vendored
+ios/** linguist-vendored
+macos/** linguist-vendored
+web/** linguist-vendored
+windows/** linguist-vendored
+test/** linguist-vendored
+
+# Files that are not related to Dart code
+*.iml linguist-generated
+*.bat linguist-generated
+*.sh linguist-generated
+*.xml linguist-generated
+*.gradle linguist-generated
+*.lock linguist-generated
+.idea/** linguist-generated
