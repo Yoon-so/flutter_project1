@@ -11,4 +11,74 @@ class Collections {
 
     print(listInt);
   }
+
+  void listRemove() {
+    List<String> nameList = ['aa', 'bbb', 'ccc', "aaaaafdf"];
+    nameList.add("눈송이");
+    nameList.add("김숙명");
+    nameList.add("홍길동");
+    nameList.add("이순신");
+    nameList.add("기린");
+    nameList.add("호랑이");
+    nameList.add("사자");
+
+    nameList.remove("가린");
+    //nameList.removeLast();
+    nameList.removeAt(0);
+
+    nameList.removeWhere((element) {
+      print("element ^ $element");
+      return element == "호랑이";
+    });
+
+    print(nameList);
+    nameList.clear();
+    print(nameList);
+  }
+
+  void listController() {
+    List<int> ageList = [4, 5, 2, 6, 7, 4, 8];
+    int length = ageList.length;
+    print('Collections.listController : $length');
+
+    int two = ageList[2];
+    print('Collections.listController two : $two');
+
+    ///ageList가 비어있는 경우 isEmpty = true
+    bool isEmpty = ageList.isEmpty;
+
+    ///ageList가 비어있지 않은 경우 isNotEmpty = true
+    bool isNotEmpty = ageList.isNotEmpty;
+  }
+
+  ///Map이라는 타입은 => key, value
+  void mapController() {
+    Map m = {
+      "a" : 10,
+      "b" : 11,
+      "c" : 12,
+      50 : 61,
+      1111:4444,
+    };
+
+    var maValue = m["a"];
+    print('Collections.mapController : $maValue');
+    m["d"] = 40;
+    m.remove("c");
+    print('Collections.mapController m : $m');
+
+    Map<String, int> typeMap = {
+      "a" : 10,
+      "b" : 20,
+      "c" : 30,
+    };
+    print('Collections.mapController typedMap : $typeMap');
+  }
+
+  void setController() {
+    Set s = {'a', 'b', 'c'};
+    s.add("a");
+    s.add("b");
+    print('Collections.setController : $s');
+  }
 }

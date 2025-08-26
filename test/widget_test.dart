@@ -15,5 +15,9 @@ import 'method.dart';
 void main() {
   Method();
   Collections collection = Collections();
+
   collection.listAdd();
+  collection.listRemove();
+  collection.mapController();
+  collection.setController();
 }
