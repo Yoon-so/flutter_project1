@@ -20,4 +20,5 @@ void main() {
   collection.listRemove();
   collection.mapController();
   collection.setController();
+  collection.practice();
 }

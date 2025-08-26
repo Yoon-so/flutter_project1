@@ -1,3 +1,5 @@
+import 'package:flutter/cupertino.dart';
+
 class Collections {
   ///List, Map, Set
 
@@ -53,13 +55,7 @@ class Collections {
 
   ///Map이라는 타입은 => key, value
   void mapController() {
-    Map m = {
-      "a" : 10,
-      "b" : 11,
-      "c" : 12,
-      50 : 61,
-      1111:4444,
-    };
+    Map m = {"a" : 10, "b" : 11, "c" : 12, 50 : 61, 1111:4444,};
 
     var maValue = m["a"];
     print('Collections.mapController : $maValue');
@@ -67,11 +63,7 @@ class Collections {
     m.remove("c");
     print('Collections.mapController m : $m');
 
-    Map<String, int> typeMap = {
-      "a" : 10,
-      "b" : 20,
-      "c" : 30,
-    };
+    Map<String, int> typeMap = {"a" : 10, "b" : 20, "c" : 30,};
     print('Collections.mapController typedMap : $typeMap');
   }
 
@@ -80,5 +72,34 @@ class Collections {
     s.add("a");
     s.add("b");
     print('Collections.setController : $s');
+  }
+
+  void practice() {
+    List<String> animals = [];
+    animals.addAll(["강아지", "악어", "송아지", "고양이", "햄스터"]);
+    print('Collections.practice : $animals');
+    animals.removeAt(1);
+    print('Collections.practice : $animals');
+
+    Map<String, int> ageMap = {"리나": 21};
+    ageMap["함혜원"] = 35;
+    ageMap["김휘건"] = 2;
+    print('Collections.practice map 1 : $ageMap');
+    //ageMap.remove("함혜원");
+    ageMap.removeWhere((key, value) {
+      return key == "함혜원";
+    });
+    print('Collections.practice map 2 : $ageMap');
+
+    Set nation = {};
+    nation.add("한국");
+    nation.add("일본");
+    nation.add("중국");
+    nation.add("러시아");
+    nation.add("미국");
+    print('Collections.practice set 1 : $nation');
+    nation.remove("한국");
+    print('Collections.practice set 2 : $nation');
+
   }
 }
