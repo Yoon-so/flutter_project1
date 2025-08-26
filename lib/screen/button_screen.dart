@@ -9,6 +9,7 @@ import 'package:flutter_project1/screen/row/column_row_practice_screen.dart';
 import 'package:flutter_project1/screen/row/row_practice_screen.dart';
 import 'package:flutter_project1/screen/row/row_screen.dart';
 import 'package:flutter_project1/screen/stateful/stateful_screen.dart';
+import 'package:flutter_project1/screen/stack/stack_practice_screen.dart';
 import 'package:flutter_project1/screen/stack/stack_screen.dart';
 import 'package:flutter_project1/screen/text/text_practice_screen.dart';
 import 'package:flutter_project1/screen/text/text_screen.dart';
@@ -189,6 +190,20 @@ class ButtonScreen extends StatelessWidget {
                 );
               },
               child: Text("Stack"),
+            ),
+            SizedBox(height: 10),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return StackPracticeScreen();
+                    },
+                  ),
+                );
+              },
+              child: Text("Stack 실습"),
             ),
           ],
         ),
