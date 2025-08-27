@@ -35,35 +35,51 @@ void main() {
 
   //ForLoop();
 
-  Person person = Person("리나", 21, 65);
+  //Person person = Person("리나", 21, 65);
 
   //person : Instance of 'Person'
   //Person 클래스의 인스턴스
   //인스턴스 => 클래스를 생성해서, 메모리에 올라간 상태
-  print("person : $person");
-  print("person name : ${person.name}");
-  print("person age : ${person.age}");
-  print("person weight : ${person.weight}");
-  print("person nickName : ${person.nickName}");
-  person.talk();
+  //print("person : $person");
+  //print("person name : ${person.name}");
+  //print("person age : ${person.age}");
+  //print("person weight : ${person.weight}");
+  //print("person nickName : ${person.nickName}");
+  //person.talk();
+  //
+  //List<Person> personList = [];
+  //Person person1 = Person("눈송이", 30, 65);
+  //Person person2 = Person("박숙명", 2, 13);
+  //Person person3 = Person("홍길동", 0, 6);
+  //
+  // /// personList에 데이터들을 추가
+  //personList.addAll([person1, person2, person3]);
+  //
+  // /// personList의 기존의 데이터들은 사라지고, 새로 값 할당
+  //personList = [person1, person2, person3];
+  //
+  //print('personList : $personList');
+  //Product(name: "rina", company: "링잇");
+  // //Product.name(name, company);
+  // //Product.all(name, company, count, price);
+  //
+  //for (var person in personList) {
+  //  print(person);
+  //}
 
-  List<Person> personList = [];
-  Person person1 = Person("눈송이", 30, 65);
-  Person person2 = Person("박숙명", 2, 13);
-  Person person3 = Person("홍길동", 0, 6);
+  List<Product> productList = [];
+  productList.add(Product(name: "아이스티", company: "스타벅스"));
+  productList.add(Product(name: "프라푸치노", company: "스타벅스"));
+  productList.add(Product(name: "자몽망고코코", company: "스타벅스"));
 
-  /// personList에 데이터들을 추가
-  personList.addAll([person1, person2, person3]);
-
-  /// personList의 기존의 데이터들은 사라지고, 새로 값 할당
-  personList = [person1, person2, person3];
-
-  print('personList : $personList');
-  Product(name: "rina", company: "링잇");
-  //Product.name(name, company);
-  //Product.all(name, company, count, price);
-
-  for (var person in personList) {
-    print(person);
+  for (var product in productList) {
+    print('product : $product');
+    product.sale();
+    print('product : $product');
   }
+  productList[1].sale();
+  productList[1].sale();
+  productList[1].sale();
+  productList[1].sale();
+  print('p1 : ${productList[1].count}');
 }
