@@ -26,6 +26,7 @@ void main() {
   var conditional = Conditional();
   conditional.simpleSwitch();
   var ifScore = conditional.practiceIf(87);
-  var switchScore = conditional.practiceSwitch(61);
+  var switchScore = conditional.practiceSwitch(91);
   print('main ifScore = $ifScore, switchScore = $switchScore');
+  print(conditional.practiceIf(60));
 }
