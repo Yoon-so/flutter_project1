@@ -5,6 +5,7 @@ import 'package:flutter_project1/screen/container/container_practice_screen.dart
 import 'package:flutter_project1/screen/container/container_screen.dart';
 import 'package:flutter_project1/screen/image/image_practice_screen.dart';
 import 'package:flutter_project1/screen/image/image_screen.dart';
+import 'package:flutter_project1/screen/navigator/navigator_screen.dart';
 import 'package:flutter_project1/screen/row/column_row_practice_screen.dart';
 import 'package:flutter_project1/screen/row/row_practice_screen.dart';
 import 'package:flutter_project1/screen/row/row_screen.dart';
@@ -232,6 +233,8 @@ class ButtonScreen extends StatelessWidget {
               button(context, ListviewPracticeScreen(), "ListView 실습"),
               SizedBox(height: 10),
               button(context, StatefulScreen(), "Stateful"),
+              SizedBox(height: 10),
+              button(context, NavigatorScreen(), "Navigator"),
             ],
           ),
         ),
