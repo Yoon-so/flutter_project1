@@ -230,6 +230,8 @@ class ButtonScreen extends StatelessWidget {
               button(context, ListviewBuilderScreen(), "ListView Builder"),
               SizedBox(height: 10),
               button(context, ListviewPracticeScreen(), "ListView 실습"),
+              SizedBox(height: 10),
+              button(context, StatefulScreen(), "Stateful"),
             ],
           ),
         ),
