@@ -4,6 +4,7 @@ import 'package:flutter_project1/screen/column/column_screen.dart';
 import 'package:flutter_project1/screen/container/container_practice_screen.dart';
 import 'package:flutter_project1/screen/container/container_screen.dart';
 import 'package:flutter_project1/screen/future/future_screen.dart';
+import 'package:flutter_project1/screen/getx/getx_screen.dart';
 import 'package:flutter_project1/screen/image/image_practice_screen.dart';
 import 'package:flutter_project1/screen/image/image_screen.dart';
 import 'package:flutter_project1/screen/navigator/navigator_screen.dart';
@@ -247,6 +248,8 @@ class ButtonScreen extends StatelessWidget {
               button(context, FutureScreen(), "Future"),
               SizedBox(height: 10),
               button(context, NewsScreen(), "News"),
+              SizedBox(height: 10),
+              button(context, GetxScreen(), "Getx"),
               SizedBox(height: 10),
             ],
           ),
